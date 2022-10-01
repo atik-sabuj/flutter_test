@@ -1,28 +1,26 @@
+import 'package:flutter_learn/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/sajek/sajek_valley.dart';
-
-import 'day1/FirstTest.dart';
-import 'day2/day_two.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("Hello Android "),
-          ),
-          body: Sajek(),
-        ),
+      title: 'Flutter Demo',
+      theme: ThemeData(
 
+        primarySwatch: Colors.blue,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
+
 
